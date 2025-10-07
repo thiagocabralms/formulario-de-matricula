@@ -25,6 +25,50 @@
                 <h1>Formulário de matrícula</h1>
                 <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
             </div>
+
+            <form method="post" enctype="multipart/form-data">
+                <fieldset class="child-info">
+                    <legend>Informações da criança</legend>
+
+                    <div class="input-wrapper">
+                        <label for="fullname">Nome completo</label>
+                        <input type="text" name="fullname" id="fullname" placeholder="Ex: Pedro Henrique Silva">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="birth">Data de nascimento</label>
+                        <input id="birth" type="date" name="birth">
+                    </div>
+
+                    <div class="select-wrapper">
+                        <label for="gender">Sexo</label>
+                        <select name="gender" id="gender">
+
+                            <option selected disabled>Selecione</option>
+                            <option value="female">Feminino</option>
+                            <option value="male">Masculino</option>
+                            <option value="na">Prefiro não responder</option>
+
+                        </select>
+                    </div>
+
+                    <div class="textarea-wrapper">
+                        <label for="medical-info">Informações médicas</label>
+                        <textarea name="medical-info" id="medical-info"
+                        cols="30" rows="10"
+                        placeholder="Ex: Ela tem alergia a glúten"
+                        ></textarea>
+                    </div>
+
+                    <div class="droparea-wrapper">
+                        <p>Certidão de nascimento</p>
+                        <input type="file" id="birth-file" name="birth-file">
+                        <img src="assets/icons/cloud-upload.svg" alt="CLoud upload">
+                        <p>Clique aqui para <br>
+                        selecionar o arquivo</p>
+                    </div>
+                </fieldset>
+            </form>
         </main>
 
         <aside>
@@ -38,7 +82,7 @@
                     </h2>
                     <p>Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.</p>
                 </header>
-                
+
                 <img src="assets/Illustration.svg" alt="Ilustração de uma professora com alunos">
             </div>
         </aside>
